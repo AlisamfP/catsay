@@ -9,7 +9,8 @@ It's cowsay, but with cats.
 $ npm i -g catsay
 ```
 
-##usage
+
+## Usage
 ```
 $ catsay Hello World
 ```
