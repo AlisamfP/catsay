@@ -10,19 +10,19 @@ class CatSay
       .option '-c, --cat', 'have the cat talk in its native language'
       .parse process.argv
 
-    @say = cmd.args.join " "
-    @catSpeak = cmd.cat
+    @say = cmd.args
+    if cmd.cat
+      @say = _.map @say, (word) ->
+        return "Meow"
+    @say = @say.join " "
 
   run: =>
     @parseOptions()
 
     return @die new Error('No text specified') unless @say?
-    return @catsay "meow meow meow" if @catSpeak
-    @catsay @say
 
-  catsay: (text) =>
     console.log(" /\\_/\\ ")
-    console.log("( o.o )  ---#{text}")
+    console.log("( o.o )  ---#{@say}")
     console.log(" m   m ")
 
   die: (error) =>
