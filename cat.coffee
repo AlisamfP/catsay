@@ -22,7 +22,7 @@ class CatSay
     return @die new Error('No text specified') unless @say?
 
     console.log(" /\\_/\\ ")
-    console.log("( o.o )  ---#{@say}")
+    console.log("( o.o )  << #{@say} >>")
     console.log(" m   m ")
 
   die: (error) =>
