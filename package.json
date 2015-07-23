@@ -1,10 +1,11 @@
 {
   "name": "catsay",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Meow",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "bin": {
     "catsay": "./bin/catsay"
@@ -16,5 +17,19 @@
     "colors": "^1.1.2",
     "commander": "^2.8.1",
     "lodash": "^3.10.0"
-  }
+  },
+  "devDependencies": {
+    "coffee-script": "^1.9.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlisamfP/catsay.git"
+  },
+  "keywords": [
+    "cats"
+  ],
+  "bugs": {
+    "url": "https://github.com/AlisamfP/catsay/issues"
+  },
+  "homepage": "https://github.com/AlisamfP/catsay"
 }
