@@ -10,7 +10,7 @@ class CatSay
       .option '-c, --cat', 'have the cat talk in its native language'
       .parse process.argv
 
-    @say = _.first cmd.args
+    @say = cmd.args.join " "
     @catSpeak = cmd.cat
 
   run: =>
